@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Contact details</title>
+    </head>
+    <body>
+        <h1>CONTACT DETAILS</h1>
+       <ul>
+           <li><h4>Address</h4></li>
+           <p>Durga Park, New Delhi</p>
+           <li><h4>Phone</h4></li>
+           <p>+91-7042523561</p>
+           <li><h4><a href="mailto:mishra.rahul7341@gmail.com">Email</a></h4></li>
+           <li><h4><a href="https://www.linkedin.com/in/rahul-mishra-357308156/">linkedIn</a></h4></li>
+        </ul>
+        <hr>
+        <form action="mailto:mishra.rahul7341@gmail.com" method="POST" enctype="text/plain">
+            <!--enctype so that only text appears and not other + or % symbols-->
+            <label for="Name :">Name:</label>
+            <input type="text" name="Your Name:"><br> 
+            <!--name attribute is useful because when we click on submit mailto page opens 
+            and "Your Name:" prints before the input given by user in the mail body-->
+            <label for="Phone :">Phone:</label>
+            <input type="text"><br>
+            <label for="Email id :">Email id:</label>
+            <input type="email" pattern="+@thapar\.edu" placeholder="username@thapar.edu" required><br>
+            <label for="Password :">Password:</label>
+            <input type="password"><br>
+            <label for="DOB">DOB:</label>
+            <input type="date"><br>
+            <label for="Feedback" >Feedback:</label><br>
+            <textarea name="Feedback:" id="" cols="30" rows="10"></textarea><br>
+            <label for="Preffered contact type :">Preffered contact type :</label>
+            <input type="radio" value="Email">
+            <label for="Email">Email</label>
+            <input type="radio" value="Phone">
+            <label for="Phone">Phone</label><br>
+            <label for="">Accept all terms and conditions.</label>
+            <input type="checkbox" required><br>
+            <input type="submit">
+            <!-- Other types include color, file, range etc -->
+        </form>
+    </body>
+</html>
